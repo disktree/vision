@@ -1,0 +1,7 @@
+-js web/app.js
+-main vvv.App
+-cp src
+-lib om.hls
+-debug
+-dce full
+-D js-es=6
