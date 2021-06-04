@@ -1,5 +1,6 @@
 package vision;
 
+import js.html.AnchorElement;
 import js.Browser.document;
 import js.Browser.window;
 import js.html.URLSearchParams;
@@ -21,6 +22,9 @@ function main() {
     
     var video : VideoElement = cast document.getElementById('video');
     video.preload = "none";
+
+    var rtmpLink : AnchorElement = cast document.getElementById('rtmp-link');
+    rtmpLink.href = 'rtmp://$host/vision/$stream';
 
     var src = '${url}/${stream}.m3u8';
     if( Hls.isSupported() ) {
