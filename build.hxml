@@ -1,7 +1,8 @@
 -js web/app.js
--main vvv.App
+-main vision.App
 -cp src
--lib om.hls
+-lib hls
 -debug
 -dce full
 -D js-es=6
+-D analyzer-optimize
